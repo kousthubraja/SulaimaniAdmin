@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    tools:context="com.example.sutestadmin.AddItem"
+    android:background="@drawable/cupcake"
+    android:paddingTop="60dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+    
+	<EditText
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#d2691e"
+        android:textColorHint="#bd5e1b"
+        android:background="@drawable/edittext_rounded_corners"
+        android:inputType="textCapWords"
+        android:padding="6dp"
+        android:gravity="center"
+        android:hint="Item name"
+         />
+
+   <EditText
+        android:id="@+id/item_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#d2691e"
+        android:textColorHint="#bd5e1b"
+        android:background="@drawable/edittext_rounded_corners"
+        android:inputType="numberDecimal"
+        android:padding="6dp"
+        android:gravity="center"
+        android:hint="Price"
+         />
+
+   
+    <Button
+        android:id="@+id/btnadditem"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custombutton"
+        android:textColor="#a8a8a8"
+        android:layout_gravity="center"
+        android:text="Add Item"
+        android:onClick="addItem" />
+    
+</LinearLayout>

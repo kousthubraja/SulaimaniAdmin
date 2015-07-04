@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SuTestAdmin</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="price">Price</string>
+    <string name="item_name">Item Name</string>
+    <string name="add">ADD</string>
+
+</resources>
