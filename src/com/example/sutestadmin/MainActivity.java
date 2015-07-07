@@ -90,6 +90,12 @@ public class MainActivity extends Activity {
     	
     }
     
+    public void view_transactions(View view) {
+    	Intent intent = new Intent(this, Transactions.class);
+    	startActivity(intent);
+    	
+    }
+    
     public void exit(View v){
 		finish();
 	}

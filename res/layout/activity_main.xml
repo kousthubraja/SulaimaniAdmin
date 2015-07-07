@@ -44,6 +44,17 @@
         android:onClick="view_feedback" />
     
     <Button
+        android:id="@+id/btntrans"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custombutton"
+        android:textColor="#a8a8a8"
+        android:layout_gravity="center"
+        android:text="View Transactions"
+        android:onClick="view_transactions" />
+    
+    <Button
         android:id="@+id/btnexit"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
