@@ -48,6 +48,42 @@ public class Orders extends Activity {
 	   
 	}
 	
+	public void clearOrders(View v){
+		new AsyncTask<Void, Void, Void>() {
+
+    		HttpEntity entity = null;
+    		String output = null;
+    		
+			@Override
+			protected Void doInBackground(Void... params) {
+				HttpClient httpclient = new DefaultHttpClient();
+				try{
+					HttpPost httppost = new HttpPost(SERVER_URL + "clearOrders.php?confirm=YES");
+					
+					HttpResponse response = httpclient.execute(httppost);
+					entity = response.getEntity();
+					output = EntityUtils.toString(entity);
+				}
+				catch(Exception e){
+					;
+				}
+				return null;
+			}
+			
+			@Override
+			protected void onPostExecute(Void result) {
+				if(output != null ){
+					Toast.makeText(context, "Orders cleared", Toast.LENGTH_SHORT).show();
+					finish();
+				}
+				super.onPostExecute(result);
+			}
+				
+    		
+		}.execute();
+		
+	}
+	
 	public void fetchOrder(View v){
 
 		new AsyncTask<Void, Void, Void>() {

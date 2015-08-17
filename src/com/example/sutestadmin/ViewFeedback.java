@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 public class ViewFeedback extends Activity {
 	
@@ -67,6 +68,7 @@ public class ViewFeedback extends Activity {
     
     class LoadAllFeedback extends AsyncTask<String, String, String> {
 
+    	boolean failed = false;
         /**
          * Before starting background thread Show Progress Dialog
          * */
@@ -80,9 +82,10 @@ public class ViewFeedback extends Activity {
             // Building Parameters
             List<NameValuePair> params = new ArrayList<NameValuePair>();
             // getting JSON string from URL
-            JSONObject json = jParser.makeHttpRequest(url_all_feedback, "GET", params);
+            
 
             try {
+            	JSONObject json = jParser.makeHttpRequest(url_all_feedback, "GET", params);
             	// Getting Array of feedback
                 feedback = json.getJSONArray(TAG_DATA);
 
@@ -105,7 +108,8 @@ public class ViewFeedback extends Activity {
                     feedbackList.add(map);
                 }
                 //               }
-            } catch (JSONException e) {
+            } catch (Exception e) {
+            	failed = true;
                 e.printStackTrace();
             }
 
@@ -119,6 +123,10 @@ public class ViewFeedback extends Activity {
             // dismiss the dialog after getting all products
 //            pDialog.dismiss();
             // updating UI from Background Thread
+        	if(failed){
+        		Toast.makeText(getApplicationContext(), "Cannot retrieve feedbacks, No internet connection.", Toast.LENGTH_LONG).show();
+        		return;
+        	}
             runOnUiThread(new Runnable() {
                 public void run() {
                     /**

@@ -78,6 +78,12 @@ public class MainActivity extends Activity {
     	
     }
     
+    public void delete_item(View view) {
+    	Intent intent = new Intent(this, DelItem.class);
+    	startActivity(intent);
+    	
+    }
+    
     public void view_orders(View view) {
     	Intent intent = new Intent(this, Orders.class);
     	startActivity(intent);

@@ -487,35 +487,41 @@ containing a value of this type.
         public static final int powered_by_google_light=0x7f020029;
     }
     public static final class id {
-        public static final int action_settings=0x7f070028;
+        public static final int action_settings=0x7f07002e;
         public static final int adjust_height=0x7f070003;
         public static final int adjust_width=0x7f070002;
         public static final int book_now=0x7f070014;
-        public static final int btnadditem=0x7f07001a;
-        public static final int btnexit=0x7f07001e;
-        public static final int btnfeedback=0x7f07001c;
-        public static final int btntrans=0x7f07001d;
-        public static final int btnvieworder=0x7f07001b;
+        public static final int btnadditem=0x7f07001b;
+        public static final int btndelitem=0x7f07001c;
+        public static final int btnexit=0x7f070020;
+        public static final int btnfeedback=0x7f07001e;
+        public static final int btntrans=0x7f07001f;
+        public static final int btnvieworder=0x7f07001d;
+        public static final int button1=0x7f070022;
         public static final int buyButton=0x7f07000e;
         public static final int buy_now=0x7f070013;
         public static final int buy_with_google=0x7f070012;
         public static final int cast_notification_id=0x7f070000;
         public static final int classic=0x7f070016;
         public static final int donate_with_google=0x7f070015;
-        public static final int feedback=0x7f070023;
-        public static final int feedbackListView=0x7f070026;
+        public static final int feedback=0x7f070027;
+        public static final int feedbackListView=0x7f07002d;
         public static final int grayscale=0x7f070017;
         public static final int holo_dark=0x7f070008;
         public static final int holo_light=0x7f070009;
         public static final int hybrid=0x7f070007;
-        public static final int item_name=0x7f070020;
-        public static final int item_price=0x7f070021;
-        public static final int lstOrders=0x7f070027;
+        public static final int itemName=0x7f070028;
+        public static final int itemPrice=0x7f070029;
+        public static final int item_name=0x7f070024;
+        public static final int item_price=0x7f070025;
+        public static final int lstItems=0x7f07001a;
+        public static final int lstOrders=0x7f070021;
         public static final int match_parent=0x7f070010;
         public static final int monochrome=0x7f070018;
         public static final int none=0x7f070001;
         public static final int normal=0x7f070004;
         public static final int production=0x7f07000a;
+        public static final int quantity=0x7f07002a;
         public static final int sandbox=0x7f07000c;
         public static final int satellite=0x7f070005;
         public static final int selectionDetails=0x7f07000f;
@@ -523,23 +529,26 @@ containing a value of this type.
         public static final int strict_sandbox=0x7f07000d;
         public static final int terrain=0x7f070006;
         public static final int test=0x7f07000b;
-        public static final int txtOrderMsg=0x7f070025;
-        public static final int txtUserNameOrder=0x7f070024;
-        public static final int username=0x7f070022;
-        public static final int webView_trans=0x7f07001f;
+        public static final int txtOrderMsg=0x7f07002c;
+        public static final int txtUserNameOrder=0x7f07002b;
+        public static final int username=0x7f070026;
+        public static final int webView_trans=0x7f070023;
         public static final int wrap_content=0x7f070011;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f090000;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_transactions=0x7f030001;
-        public static final int add_item=0x7f030002;
-        public static final int feedback_item=0x7f030003;
-        public static final int order_item=0x7f030004;
-        public static final int view_feedback=0x7f030005;
-        public static final int view_orders=0x7f030006;
+        public static final int activity_deleteitem=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int activity_order=0x7f030002;
+        public static final int activity_transactions=0x7f030003;
+        public static final int add_item=0x7f030004;
+        public static final int feedback_item=0x7f030005;
+        public static final int list_food_item=0x7f030006;
+        public static final int order_item=0x7f030007;
+        public static final int view_feedback=0x7f030008;
+        public static final int view_orders=0x7f030009;
     }
     public static final class menu {
         public static final int main=0x7f0b0000;
